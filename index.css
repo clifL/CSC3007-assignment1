@@ -12,7 +12,9 @@ table {
     position: absolute;
     width: 70%;
     margin-left:  15%;
-    margin-right : 15%
+    margin-right : 15%;
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -24,3 +26,4 @@ body {
     /* Center and scale the image nicely */
     background-position: center;
 }
+

@@ -15,8 +15,8 @@ function fetchData()
     })
     .then(data => 
         {   
-
-            var htmlTable = "<table border ='1'><tr><th>Type</th><th>West</th><th>National</th><th>East</th><th>Central</th>"
+            var mydate = new Date(data.items[0].update_timestamp);
+            var htmlTable = "<table border ='1'><tr><th colspan='7'>Last Updated : " + mydate   + "</th></tr></th><th>Type</th><th>West</th><th>National</th><th>East</th><th>Central</th>"
             + "<th>South</th><th>North</th></tr>";
             for (var key in data.items[0].readings){
                 htmlTable = htmlTable + "<tr>";
@@ -34,6 +34,8 @@ function fetchData()
         })
     .catch(error => console.log("Error"));
 }
+
+
 
 
 fetchData();
